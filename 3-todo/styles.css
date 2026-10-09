@@ -96,6 +96,17 @@ body {
   border-bottom: 1px solid #e2e8f0;
 }
 
+.task.completed {
+  position: relative;
+  &:before {
+    content: '';
+    height: 2px;
+    width: calc(100% - 25px);
+    position: absolute;
+    background-color: #00b300;
+  }
+}
+
 .task__text {
   flex: 1;
   cursor: pointer;
